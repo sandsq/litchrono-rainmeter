@@ -22,9 +22,9 @@ Download the Rainmeter skin from [releases](https://github.com/sandsq/litchrono-
 ### Advanced
 Clone this repository to your Rainmeter skin directory (typically `%USERPROFILE%\Documents\Rainmeter\Skins`) using 
 
-    git clone https://github.com/sandsq/litchrono-rainmeter.git --recurse-submodules litchrono
+    git clone https://github.com/sandsq/litchrono-rainmeter.git litchrono
 
-Then, you can periodically update the submodule to receive new quotes and corrections.
+Quotes are downloaded automatically; no separate quote checkout is required.
 
 ## Configuration
 Open litchrono.ini and locate the \[Variables\] section. `WidgetMode = 1` is meant to be used as a desktop background element, while `WidgetMode = 0` is meant to be used as an overlay bar.
@@ -57,6 +57,8 @@ Remember to refresh the skin after making any changes!
     BottomPadding = 10
 
 ## Quotes
+
+The skin downloads quotes on load and every 24 hours while running. WebParser saves the JSON to `DownloadFile/time_of_day_quotes_with_bold.json`.
 
 If you see quote errors or would like to suggest some to add, visit the [quote repository](https://github.com/sandsq/time_of_day_quotes)!
 
